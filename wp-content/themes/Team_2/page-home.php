@@ -4,7 +4,7 @@
     <div class="hero-text">
         <h2>TITOLO DESTINAZIONE</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut optio vero tenetur quia unde. Natus nobis dolores
-            laboriosam velit, hic veniam. Facilis amet explicabo, exercitationem atque ea a molestias laborum?</p>
+            laboriosam veli, hic veniam. Facilis amet explicabo, exercitationem atque ea a molestias laborum?</p>
         <button>Scopri di più</button>
     </div>
 </div>
