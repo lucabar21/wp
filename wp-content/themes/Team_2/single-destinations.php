@@ -11,7 +11,7 @@ the_post(); ?>
         </div>
         <div class="col-12 col-md-3">
             <div class="card"> <?php get_sidebar() ?>
-            </div>
+            </div>,,
         </div>
     </div>
 </div>
