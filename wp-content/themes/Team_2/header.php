@@ -31,16 +31,16 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="<?php site_url("/about") ?>">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contatti</a>
+                            <a class="nav-link" href="<?php site_url("/contatti") ?>">Contatti</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Archivio</a>
+                            <a class="nav-link" href="<?php site_url("/archivio") ?>">Archivio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link" href="<?php site_url("/blog") ?>">Blog</a>
                         </li>
                     </ul>
                 </div>
