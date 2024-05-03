@@ -1,0 +1,19 @@
+wp-admin/
+wp-includes/
+wp-content/index.php
+wp-content/plugins
+wp-content/languages
+
+
+WP root php files
+wp.php
+xmlrpc.php
+readme.html
+license.txt
+index.php
+.htaccess
+
+...ma non ignora la directory 'themes'
+!/wp-content/themes/
+!/wp-content/themes/Team_2
+!/wp-content/themes/Team_2/index.php 
