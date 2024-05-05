@@ -85,3 +85,14 @@ button {
 .hp-section-2 > h5 {
   color: #122b40;
 }
+
+/* Archive */
+.arc-btn {
+  background-color: #99dfeb;
+  border: 1px solid #122b40;
+  color: #122b40;
+}
+
+.arc-read {
+  color: #122b40;
+}
