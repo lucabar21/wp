@@ -30,7 +30,7 @@
                                             <?php $categories = get_the_category();
                                             if ( ! empty( $categories ) ) {
                                                 foreach( $categories as $category ) {
-                                                    echo '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="badge bg-dark text-light px-2 me-1 arc-bdg">' . esc_html( $category->name ) . '</a>';
+                                                    echo '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="badge bg-dark text-light px-3 me-1 arc-bdg">' . esc_html( $category->name ) . '</a>';
                                                 }
                                             }
                                             ?> | <?php echo get_the_date(); ?>
