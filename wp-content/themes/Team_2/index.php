@@ -2,7 +2,7 @@
 
 <div class="container">
     <div class="row mt-5 justify-content-center">
-    <h1>Blog</h1>
+        <h1>Blog</h1>
         <form class="d-flex w-50" role="search" method="post" action="<?php echo esc_url(home_url('/')); ?>">
             <input class="form-control me-2" type="search" placeholder="Cerca articoli..." aria-label="Search" name="s">
             <button class="arc-btn">Cerca</button>
@@ -11,7 +11,6 @@
 
     <!-- Card -->
     <div class="row">
-        
         <?php
         if (have_posts()):
             while (have_posts()):
@@ -22,7 +21,7 @@
                             alt="<?php the_title(); ?>">
                         <div class="card-body">
                             <h5 class="card-title"><?php the_title(); ?></h5>
-                            <?php if (is_single()):  ?>
+                            <?php if (is_single()): ?>
                                 <p class="card-text"><?php the_content(); ?></p>
                             <?php endif; ?>
                             <p class="card-text">
@@ -46,14 +45,7 @@
         endif;
         ?>
     </div>
-   
-        
-        
-
-        <div class="col-12 col-md-3">
-            <?php get_sidebar(); ?>
-        </div>
-    </div>
+</div>
 </div>
 
 <?php get_footer(); ?>
