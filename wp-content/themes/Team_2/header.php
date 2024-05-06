@@ -23,7 +23,7 @@
         <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand ms-3" href="<?= site_url("/home") ?>"><img style="height:60px"
-                        src="wp-content\uploads\2024\05\logo.png" alt="logo"></a>
+                        src="<?= site_url("/wp-content/uploads/2024/05/logo.png") ?>" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">

@@ -33,7 +33,7 @@
 </div>
 <!-- PROMO -->
 <div class="hp-bot-section-3 my-4 mx-3">
-    <div id="promo-img"><img src="wp-content\uploads\2024\05\promo.png" alt="promo"></div>
+    <div id="promo-img"><img src="<?= site_url("/wp-content/uploads/2024/05/promo.png") ?>" alt="promo"></div>
     <div id="promo-btn">
         <h5>APPROFITTA DEI NOSTRI IMPERDIBILI SCONTI VIAGGIO!</h5>
         <div>COUPON 50%</div>
