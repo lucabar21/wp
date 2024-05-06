@@ -3,7 +3,8 @@
 * {
   font-family: "Josefin Sans", sans-serif;
 }
-body {
+body,
+html {
   background-color: #ffe9e9;
 }
 
@@ -194,4 +195,35 @@ form {
 h5 {
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+/* error 404 */
+
+.error {
+  display: flex;
+}
+
+.img-cont {
+  width: 50%;
+  height: 500px;
+}
+.img-cont > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.text-cont {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.text-cont > h2 {
+  text-align: center;
+  color: #122b40;
+  font-weight: 700;
+  font-size: 5rem;
 }
