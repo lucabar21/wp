@@ -346,6 +346,11 @@ h5 {
 .autore {
   font-size: 1em !important;
 }
+
+form {
+  width: 100% !important;
+  margin-inline: 0 !important;
+}
 /* FOOTER */
 
 footer {
