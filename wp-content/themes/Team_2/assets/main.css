@@ -85,3 +85,16 @@ button {
 .hp-section-2 > h5 {
   color: #122b40;
 }
+
+
+/* SINGLE DESTINATION PAGE */
+
+.subdate {
+  font-size: 0.6em;
+  margin-bottom: 0 !important;
+  color: #4A4A4A;
+}
+
+.autore {
+  font-size: 1em !important;
+}
