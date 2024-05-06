@@ -15,34 +15,34 @@ shuffle($bw_authors);
         <div class="row row-cols-4">
             <div class="col">
                 <div>Destinazioni</div>
-                <div class="fs-6 text-white-50">
-                    <div class="nav-link">Asia</div>
-                    <div class="nav-link">Africa</div>
-                    <div class="nav-link">Europa</div>
-                    <div class="nav-link">America</div>
-                </div>
+                <ul class="fs-6 text-white-50 p-0">
+                    <li class="nav-link">Asia</li>
+                    <li class="nav-link">Africa</li>
+                    <li class="nav-link">Europa</li>
+                    <li class="nav-link">America</li>
+                </ul>
             </div>
             <div class="col">
             <div>Servizi</div>
-                <div class="fs-6 text-white-50">
-                    <div class="nav-link">Voli</div>
-                    <div class="nav-link">Biglietti</div>
-                </div>
+                <ul class="fs-6 text-white-50 p-0">
+                    <li class="nav-link">Voli</li>
+                    <li class="nav-link">Biglietti</li>
+                </ul>
             </div>
             <div class="col">
                 <div>Help</div>
-                <div class="fs-6 text-white-50">
-                    <div>Privacy Policy</div>
-                    <div>FAQ</div>
-                </div>
+                <ul class="fs-6 text-white-50 p-0">
+                    <li class="nav-link">Privacy Policy</li>
+                    <li class="nav-link">FAQ</li>
+                </ul>
             </div>
             <div class="col">
                 <div>Contatti</div>
-                <div class="fs-6 text-white-50">
-                    <div><i class="bi bi-geo-alt-fill"></i> via Roma, Milano (MI), Italy</div>
-                    <div><i class="bi bi-telephone-fill"></i> +02 02020202</div>
-                    <div><i class="bi bi-envelope-fill"></i> info@team.it</div>
-                </div>
+                <ul class="fs-6 text-white-50 p-0">
+                    <li class="nav-link"><i class="bi bi-geo-alt-fill"></i> via Roma, Milano (MI), Italy</li>
+                    <li class="nav-link"><i class="bi bi-telephone-fill"></i> +02 02020202</li>
+                    <li class="nav-link"><i class="bi bi-envelope-fill"></i> info@team.it</li>
+                </ul>
             </div>
         </div>
         <div class="text-center border-top border-white pt-3 mt-3">
