@@ -12,6 +12,8 @@ readme.html
 license.txt
 index.php
 .htaccess
+wp-config.php
+.gitignore
 
 ...ma non ignora la directory 'themes'
 !/wp-content/themes/
