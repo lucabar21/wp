@@ -21,6 +21,10 @@ button {
   font-weight: 700;
 }
 
+.fs-6 {
+  font-size: 13px !important;
+}
+
 .hp-section {
   height: 750px;
   border-radius: 15px;
