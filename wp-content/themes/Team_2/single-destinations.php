@@ -11,7 +11,8 @@ the_post(); ?>
         </div>
         <div class="col-12 col-md-3">
             <div class="card"> <?php get_sidebar() ?>
-            </div>,,
+            <h5 class="card-title"><?php the_title(); ?></h5>
+            </div>
         </div>
     </div>
 </div>

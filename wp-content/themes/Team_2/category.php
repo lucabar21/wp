@@ -12,6 +12,9 @@
     <div class="row">
         <div class="col-12 col-md-12 mt-5">
             <h1 class="mt-2"><?php the_archive_title(); ?></h1>
+            <?php if (is_category()) : ?>
+                <a href="javascript:history.back()" class="arc-indietro mb-3"><i class="bi bi-backspace-fill px-1"></i>Torna Indietro</a>
+            <?php endif; ?>
             <div class="row g-4">
                 <?php 
                 if (have_posts()) :

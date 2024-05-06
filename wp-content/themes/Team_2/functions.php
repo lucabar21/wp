@@ -13,7 +13,7 @@ function custom_posts()
     register_post_type('destinations', [
         'supports' => ['title', 'editor', 'author', 'thumbnail'],
         'delete with_user' => false,
-        'has _archive' => true,
+        'has_archive' => true,
         'public' => true,
         'menu icon' => 'dashicons-tickets-alt',
         'labels' => [
