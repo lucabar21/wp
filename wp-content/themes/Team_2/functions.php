@@ -11,7 +11,7 @@ add_action('wp_enqueue_scripts', 'theme_files');
 function custom_posts()
 {
     register_post_type('destinations', [
-        'supports' => ['title', 'editor', 'author', 'thumbnail'],
+        'supports' => ['title', 'editor', 'author', 'comments', 'thumbnail'],
         'delete with_user' => false,
         'has_archive' => true,
         'public' => true,

@@ -37,6 +37,11 @@ the_post(); ?>
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-12 col-md-3">
+            <?php comments_template(); ?>
+        </div>
+    </div>
 </div>
 
 <?php

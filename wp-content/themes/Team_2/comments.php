@@ -1,12 +1,22 @@
 <?php
-if (post_password_required()) {
-    return;
-}
+if (comments_open() || get_comments_number()) :
+    comment_form();
+    if (have_comments()) :
 ?>
-<div id="comments" class="comments-area">
-    <?php if (have_comments()) : ?>
-        <!-- Qui viene visualizzata la lista dei commenti -->
-    <?php endif; // have_comments()  
+        <ol class="comment-list">
+            <?php
+            wp_list_comments();
+            ?>
+        </ol>
+    <?php
+    else :
     ?>
-    <?php comment_form(); ?>
-</div>
+        <p>Non ci sono commenti.</p>
+    <?php
+    endif;
+else :
+    ?>
+    <p>I commenti sono chiusi per questa pagina.</p>
+<?php
+endif;
+?>
