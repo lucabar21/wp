@@ -37,7 +37,7 @@ shuffle($bw_authors);
                 </ul>
             </div>
             <div class="col">
-                <div>Contatti</div>
+                <div><a class="nav-link" href="<?= site_url("/contatti")?>">Contatti</a></div>
                 <ul class="fs-6 text-white-50 p-0">
                     <li class="nav-link"><i class="bi bi-geo-alt-fill"></i> via Roma, Milano (MI), Italy</li>
                     <li class="nav-link"><i class="bi bi-telephone-fill"></i> +02 02020202</li>
