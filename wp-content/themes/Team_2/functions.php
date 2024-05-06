@@ -28,6 +28,12 @@ function custom_posts()
 }
 add_action('init', 'custom_posts');
 
+function theme_features()
+{
+    add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');
+}
+add_action('after_setup_theme', 'theme_features');
 
 // add_action('widgets_init', 'my_register_sidebars');
 // function t2_sidebars()
