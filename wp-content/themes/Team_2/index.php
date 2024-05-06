@@ -2,7 +2,7 @@
 
 <div class="container">
     <div class="row mt-5 justify-content-center">
-        <form class="d-flex w-50" role="search" method="post" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+        <form class="d-flex w-50" role="search" method="post" action="<?php echo esc_url(home_url('/')); ?>">
             <input class="form-control me-2" type="search" placeholder="Cerca articoli..." aria-label="Search" name="s">
             <button class="arc-btn">Cerca</button>
         </form>
@@ -13,7 +13,7 @@
         <div class="col-12 col-md-12 mt-5">
             <h1 class="mt-2"><?php the_archive_title(); ?></h1>
             <div class="row g-4">
-                <?php 
+                <?php
                 if (have_posts()) :
                     while (have_posts()) : the_post(); ?>
                         <div class="col-12 col-md-4">
@@ -25,9 +25,9 @@
                                     <p class="card-text">
                                         <small class="text-muted">
                                             <?php $categories = get_the_category();
-                                            if ( ! empty( $categories ) ) {
-                                                foreach( $categories as $category ) {
-                                                    echo '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="badge bg-dark text-light px-2 me-1 arc-bdg">' . esc_html( $category->name ) . '</a>';
+                                            if (!empty($categories)) {
+                                                foreach ($categories as $category) {
+                                                    echo '<a href="' . esc_url(get_category_link($category->term_id)) . '" class="badge bg-dark text-light px-2 me-1 arc-bdg">' . esc_html($category->name) . '</a>';
                                                 }
                                             }
                                             ?> | <?php echo get_the_date(); ?>
@@ -38,8 +38,8 @@
                                 </div>
                             </div>
                         </div>
-                    <?php endwhile;
-                else: 
+                <?php endwhile;
+                else :
                     echo '<p>Nessun articolo trovato.</p>';
                 endif;
                 ?>
