@@ -44,7 +44,7 @@
                         </div>
                     </div>
                 <?php endwhile; else: ?>
-                <p>Nessun articolo trovato.</p>
+                <p class="fs-5">Nessun articolo trovato.</p>
             <?php endif; ?>
         </div>
         <?php echo paginate_links(); ?>
