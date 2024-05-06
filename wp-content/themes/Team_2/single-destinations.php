@@ -37,9 +37,12 @@ the_post(); ?>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12 col-md-3">
-            <?php comments_template(); ?>
+    <div class="row mt-3">
+        <div class="col-12 col-md-9">
+            <div class="card p-3">
+                <div class="form-width">
+                    <?php comments_template(); ?></div>
+            </div>
         </div>
     </div>
 </div>

@@ -34,7 +34,6 @@
                                         </small>
                                     </p>
                                     <a href="<?php the_permalink(); ?>"><button class="arc-btn">Read</button></a>
-
                                 </div>
                             </div>
                         </div>
