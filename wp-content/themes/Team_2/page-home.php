@@ -54,7 +54,7 @@
 </div>
 <!-- CALL TO ACTION FORM -->
 <div class="hp-top-section-3 my-4 mx-3">
-    <h5 class="my-3">Consigliaci una destinazione che vorresti che presentassimo nelle prossime settimane!</h5>
+    <h5 class="my-3">Consigliaci nuove destinazioni che vorresti presentassimo nelle prossime settimane!</h5>
     <form>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Inserisci il tuo nome</label>

@@ -11,14 +11,15 @@
     <!-- Card -->
     <div class="row">
         <div class="col-12 col-md-12 mt-5">
-            <h1 class="mt-2"><?php the_archive_title(); ?></h1>
             <div class="row g-4">
                 <?php
-                if (have_posts()) :
-                    while (have_posts()) : the_post(); ?>
+                if (have_posts()):
+                    while (have_posts()):
+                        the_post(); ?>
                         <div class="col-12 col-md-4">
                             <div class="card h-100 mt-5">
-                                <img src="<?= get_the_post_thumbnail_url() ?: wp_get_attachment_url(); ?>" class="card-img-top" alt="<?php the_title(); ?>">
+                                <img src="<?= get_the_post_thumbnail_url() ?: wp_get_attachment_url(); ?>" class="card-img-top"
+                                    alt="<?php the_title(); ?>">
                                 <div class="card-body">
                                     <h5 class="card-title"><?php the_title(); ?></h5>
                                     <p class="card-text"><?php the_excerpt(); ?></p>
@@ -34,21 +35,16 @@
                                         </small>
                                     </p>
                                     <a href="<?php the_permalink(); ?>"><button class="arc-btn">Read</button></a>
-
                                 </div>
                             </div>
                         </div>
-                <?php endwhile;
-                else :
+                    <?php endwhile;
+                else:
                     echo '<p>Nessun articolo trovato.</p>';
                 endif;
                 ?>
             </div>
             <?php echo paginate_links(); ?>
-        </div>
-
-        <div class="col-12 col-md-3">
-            <?php get_sidebar(); ?>
         </div>
     </div>
 </div>

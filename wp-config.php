@@ -27,7 +27,7 @@ define('DB_NAME', 'ifoa_bw4');
 define('DB_USER', 'root');
 
 /** Database password */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', '');
 
 /** Database hostname */
 define('DB_HOST', 'localhost');
