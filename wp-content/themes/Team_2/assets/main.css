@@ -20,6 +20,10 @@ button {
   font-weight: 700;
 }
 
+.fs-6 {
+  font-size: 13px !important;
+}
+
 .hp-section {
   height: 750px;
   border-radius: 15px;
@@ -318,13 +322,12 @@ h5 {
   text-decoration: none;
 }
 
-
 /* SINGLE DESTINATION PAGE */
 
 .subdate {
   font-size: 0.6em;
   margin-bottom: 0 !important;
-  color: #4A4A4A;
+  color: #4a4a4a;
 }
 
 .autore {

@@ -17,7 +17,7 @@
                 if (have_posts()) :
                     while (have_posts()) : the_post(); ?>
                         <div class="col-12 col-md-4">
-                            <div class="card h-100 mt-5">
+                            <div class="card">
                                 <img src="<?= get_the_post_thumbnail_url() ?: wp_get_attachment_url(); ?>" class="card-img-top" alt="<?php the_title(); ?>">
                                 <div class="card-body">
                                     <h5 class="card-title"><?php the_title(); ?></h5>
@@ -47,9 +47,7 @@
             <?php echo paginate_links(); ?>
         </div>
 
-        <div class="col-12 col-md-3">
-            <?php get_sidebar(); ?>
-        </div>
+        
     </div>
 </div>
 
