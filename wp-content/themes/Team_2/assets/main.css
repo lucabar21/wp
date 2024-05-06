@@ -86,6 +86,96 @@ button {
   color: #122b40;
 }
 
+/* Archive */
+.arc-btn {
+  width: 100px;
+  border: none;
+  background-color: #99dfeb;
+  color: #122b40;
+  border-radius: 15px;
+}
+.arc-btn:hover {
+  animation-name: btn-hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.arc-read {
+  color: #122b40;
+}
+.arc-read:hover {
+  color: #99dfeb;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #122b40;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.211);
+  border-radius: 15px;
+}
+
+.arc-indietro {
+  color: #122b40;
+  text-decoration: none;
+}
+.arc-indietro:hover {
+  color: #306999;
+}
+
+.arc-bdg {
+  font-size: 12px;
+  text-decoration: none;
+}
+
+/* Archive */
+.arc-btn {
+  width: 100px;
+  border: none;
+  background-color: #99dfeb;
+  color: #122b40;
+  border-radius: 15px;
+}
+.arc-btn:hover {
+  animation-name: btn-hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.arc-read {
+  color: #122b40;
+}
+.arc-read:hover {
+  color: #99dfeb;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #122b40;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.211);
+  border-radius: 15px;
+}
+
+.arc-indietro {
+  color: #122b40;
+  text-decoration: none;
+}
+.arc-indietro:hover {
+  color: #306999;
+}
+
+.arc-bdg {
+  font-size: 12px;
+  text-decoration: none;
+}
+
 
 /* SINGLE DESTINATION PAGE */
 
