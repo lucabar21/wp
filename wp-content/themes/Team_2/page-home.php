@@ -1,13 +1,35 @@
 <?php get_header(); ?>
 <!-- HERO SECTION -->
 <div class="hp-section my-4 mx-3">
-    <img class="hero-img" src="http://placedog.net/455" alt="hero">
-    <div class="hero-text">
-        <h2>TITOLO DESTINAZIONE</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut optio vero tenetur quia unde. Natus nobis dolores
-            laboriosam veli, hic veniam. Facilis amet explicabo, exercitationem atque ea a molestias laborum?</p>
-        <button>Scopri di più</button>
-    </div>
+    <?php
+    $args = array(
+        'post_type' => 'destinations',
+        'posts_per_page' => 1,
+        'order' => 'DESC' //
+    );
+    $custom_query = new WP_Query($args);
+
+    if ($custom_query->have_posts()):
+        while ($custom_query->have_posts()):
+            $custom_query->the_post(); ?>
+            <img class="hero-img" src="<?= get_the_post_thumbnail_url() ?: 'http://placedog.net/455'; ?>" alt="hero">
+            <div class="hero-text">
+                <h2><?php the_title(); ?></h2>
+                <?php
+                $excerpt = get_the_excerpt();
+                $max_lines = 3;
+                $excerpt_lines = substr_count($excerpt, "\n") + 1;
+                if ($excerpt_lines > $max_lines) {
+                    $lines = explode("\n", wordwrap($excerpt, 1000));
+                    $excerpt = implode("\n", array_slice($lines, 0, $max_lines)) . '...';
+                }
+                ?>
+                <p><?php echo $excerpt; ?></p>
+                <a href="<?php the_permalink(); ?>"><button>Scopri di più</button></a>
+            </div>
+        <?php endwhile;
+        wp_reset_postdata();
+    endif; ?>
 </div>
 <!-- PROMO -->
 <div class="hp-bot-section-3 my-4 mx-3">
@@ -19,37 +41,32 @@
 </div>
 
 <!-- LATEST POST SECTION -->
-<div class="hp-section-2 my-4 mx-3">
-    <h5>Dai un'occhiata alle destinazioni che abbiamo proposto le settimane precedenti.</h5>
-    <div class="row justify-content-center past">
-        <div class="col-auto hp-card">
-            <img src="http://placedog.net/200" alt="card">
-            <div class="hero-text">
-                <h2>TITOLO DESTINAZIONE</h2>
-                <button>Scopri di più</button>
-            </div>
+<div class="row justify-content-center my-4 mx-3 past">
+    <div class="hp-section-2">
+        <h5>Dai un'occhiata alle destinazioni che abbiamo proposto le settimane precedenti.</h5>
+        <div class="post-container">
+            <?php
+            $args = array(
+                'post_type' => 'destinations',
+                'posts_per_page' => 4
+            );
+            $custom_query = new WP_Query($args);
+
+            if ($custom_query->have_posts()):
+                while ($custom_query->have_posts()):
+                    $custom_query->the_post(); ?>
+                    <div class="col-auto hp-card">
+                        <img src="<?= get_the_post_thumbnail_url() ?: wp_get_attachment_url(); ?>" alt="card">
+                        <div class="hero-text-mini">
+                            <h2><?php the_title(); ?></h2>
+                            <a href="<?php the_permalink(); ?>"><button>Scopri di più</button></a>
+                        </div>
+                    </div>
+                <?php endwhile;
+                wp_reset_postdata();
+            endif; ?>
         </div>
-        <div class="hp-card col-auto">
-            <img src="http://placedog.net/201" alt="card">
-            <div class="hero-text">
-                <h2>TITOLO DESTINAZIONE</h2>
-                <button>Scopri di più</button>
-            </div>
-        </div>
-        <div class="hp-card col-auto">
-            <img src="http://placedog.net/202" alt="card">
-            <div class="hero-text">
-                <h2>TITOLO DESTINAZIONE</h2>
-                <button>Scopri di più</button>
-            </div>
-        </div>
-        <div class="hp-card col-auto">
-            <img src="http://placedog.net/203" alt="card">
-            <div class="hero-text">
-                <h2>TITOLO DESTINAZIONE</h2>
-                <button>Scopri di più</button>
-            </div>
-        </div>
+
     </div>
 </div>
 <!-- CALL TO ACTION FORM -->

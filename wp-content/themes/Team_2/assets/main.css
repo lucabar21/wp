@@ -12,7 +12,8 @@ nav {
   background-color: #122b40 !important;
 }
 button {
-  width: 100px;
+  width: 150px;
+  height: 60px;
   border: none;
   background-color: #99dfeb;
   color: #122b40;
@@ -43,14 +44,14 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #122b4042;
+  /* background-color: #122b4042; */
   padding: 1.5rem;
   border-radius: 15px;
 }
 
 .hero-text > h2 {
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 5rem;
 }
 
 .hero-text > p {
@@ -59,8 +60,8 @@ button {
 
 .hero-text > button {
   margin-top: 3rem;
-  width: 150px;
-  height: 50px;
+  width: 300px;
+  height: 60px;
 }
 
 @keyframes btn-hover {
@@ -75,10 +76,35 @@ button {
     color: #99dfeb;
   }
 }
-.hero-text > button:hover {
+.hero-text > a > button:hover {
   animation-name: btn-hover;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
+}
+
+.hero-text-mini {
+  width: 80%;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
+.hero-text-mini > a > button:hover {
+  animation-name: btn-hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.hero-text-mini > button {
+  margin-top: 1rem;
+  width: 200px;
+  height: 50px;
 }
 
 /* Latest post section settings */
@@ -92,6 +118,11 @@ button {
   text-align: center;
 }
 
+.post-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
 .hp-section-2 > h5 {
   color: #122b40;
   margin-bottom: 2rem;
@@ -103,7 +134,7 @@ button {
 }
 .hp-card {
   position: relative;
-  width: 500px;
+  width: 24%;
 }
 
 .hp-card > img {
@@ -188,7 +219,7 @@ button {
   text-align: center;
 }
 form {
-  width: 60%;
+  width: 50%;
   margin-inline: auto;
 }
 
