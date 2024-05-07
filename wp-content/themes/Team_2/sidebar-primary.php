@@ -1,5 +1,6 @@
 <div class="d-flex flex-column gap-3">
-    <h4 style="font-weight:700; text-align:center; font-size:1.3rem">Per un soggiorno indimenticabile, ti consigliamo:
+    <h4 style="font-weight:700; text-align:center; font-size:1.3rem">Se vuoi visitare questa destinazione, ti
+        consigliamo:
     </h4>
     <?php
     $promo = array(
