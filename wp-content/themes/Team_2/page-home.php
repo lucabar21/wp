@@ -36,7 +36,10 @@
     <div id="promo-img"><img src="<?= site_url("/wp-content/uploads/2024/05/promo.png") ?>" alt="promo"></div>
     <div id="promo-btn">
         <h5>APPROFITTA DEI NOSTRI IMPERDIBILI SCONTI VIAGGIO!</h5>
-        <div>COUPON 50%</div>
+        <div class="arc-btn">
+            
+            <a href="<?= site_url("/coupon")?>">COUPON 50%</a>
+        </div>
     </div>
 </div>
 
