@@ -23,7 +23,7 @@ shuffle($bw_authors);
                 </ul>
             </div>
             <div class="col">
-            <div>Servizi</div>
+                <div>Servizi</div>
                 <ul class="fs-6 text-white-50 p-0">
                     <li class="nav-link">Voli</li>
                     <li class="nav-link">Biglietti</li>
@@ -37,7 +37,7 @@ shuffle($bw_authors);
                 </ul>
             </div>
             <div class="col">
-                <div><a class="nav-link" href="<?= site_url("/contatti")?>">Contatti</a></div>
+                <div><a class="nav-link" href="<?= site_url("/contatti") ?>">Contatti</a></div>
                 <ul class="fs-6 text-white-50 p-0">
                     <li class="nav-link"><i class="bi bi-geo-alt-fill"></i> via Roma, Milano (MI), Italy</li>
                     <li class="nav-link"><i class="bi bi-telephone-fill"></i> +02 02020202</li>
@@ -46,8 +46,8 @@ shuffle($bw_authors);
             </div>
         </div>
         <div class="text-center border-top border-white pt-3 mt-3">
-            Made with<span class="text-danger mx-2">♥</span>by 
-            <?php foreach($bw_authors as $bw_author) {
+            Made with<span class="text-danger mx-2">♥</span>by
+            <?php foreach ($bw_authors as $bw_author) {
                 echo $bw_author . " ";
             }
             ?>

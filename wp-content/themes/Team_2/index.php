@@ -2,7 +2,6 @@
 
 <div class="container">
     <div class="row mt-5 justify-content-center">
-        <h1>Blog</h1>
         <form class="d-flex w-50" role="search" method="post" action="<?php echo esc_url(home_url('/')); ?>">
             <input class="form-control me-2" type="search" placeholder="Cerca articoli..." aria-label="Search" name="s">
             <button class="arc-btn">Cerca</button>
