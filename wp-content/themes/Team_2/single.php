@@ -1,27 +1,57 @@
-<?php get_header(); ?>
+<?php
 
-<div class="container">
+get_header();
+the_post(); ?>
+
+
+<div class="my-4 mx-3">
     <div class="row">
-        <h1 class="mt-5"><?php the_title(); ?></h1>
-            <small class="text-muted">
-            <?php $categories = get_the_category();
-            if (!empty($categories)) {
-            foreach ($categories as $category) {
-             echo '<a href="' . esc_url(get_category_link($category->term_id)) . '" class="badge bg-dark text-light px-3 ms-2 me-1 arc-bdg">' . esc_html($category->name) . '</a>';
-             }
-            }
-            ?> | <?php echo get_the_date(); ?>
-            </small>
-
-            <div class="mt-2 mb-0">
-            <a href="javascript:history.back()" class="arc-indietro "><i class="bi bi-backspace-fill px-1"></i>Torna
-            Indietro</a>
+        <div class="col-12 col-md-9">
+            <div class="card-dest">
+                <img src="<?= get_the_post_thumbnail_url() ?: wp_get_attachment_url(); ?>" class="w-100"
+                    alt="<?php the_title(); ?>">
+                <h3 class="card-title p-3"><?php single_post_title(); ?></h3>
+                <div class="mx-3">
+                    <hr>
+                    <div class="card-subtitle d-flex flex-row">
+                        <div class="rounded-circle overflow-hidden me-2">
+                            <?php echo get_avatar(get_the_author_meta('ID'), 50); ?>
+                        </div>
+                        <div class="d-flex flex-column justify-content-evenly">
+                            <div class="autore">
+                                <?php
+                            the_author(); ?>
+                            </div>
+                            <div class="d-flex flex-row">
+                                <p class="subdate me-2"><?php the_time('j F Y'); ?></p>
+                                <div class="align-items-center subdate">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chat-right me-1" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" />
+                                    </svg><span><?php comments_number('0', '1', '%'); ?></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="card-text p-3"><?php the_content(); ?></div>
             </div>
-
-            <img src="<?= get_the_post_thumbnail_url() ?: wp_get_attachment_url(); ?>" class="w-75 mt-4"
-                            alt="<?php the_title(); ?>">
-
-                            <p class="card-text mt-2"><?php the_content(); ?></p>
+        </div>
+        <div class="col-12 col-md-3">
+            <div class="sidebar"> <?php get_sidebar('primary', ['post_id' => get_the_ID()]); ?>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-12 col-md-9">
+            <div class="card p-3">
+                <div class="form-width">
+                    <?php comments_template(); ?>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

@@ -16,8 +16,10 @@
                 the_post(); ?>
                 <div class="col-12 col-md-4">
                     <div class="card my-5">
-                        <img src="<?= get_the_post_thumbnail_url() ?: wp_get_attachment_url(); ?>" class="card-img-top"
-                            alt="<?php the_title(); ?>">
+                    <a href="<?php the_permalink(); ?>">
+    <img src="<?= get_the_post_thumbnail_url() ?: wp_get_attachment_url(); ?>" class="card-img-top" alt="<?php the_title(); ?>">
+</a>
+
                         <div class="card-body">
                             <h5 class="card-title"><?php the_title(); ?></h5>
                             <?php if (is_single()): ?>
