@@ -16,7 +16,7 @@
                 $custom_query->the_post(); ?>
                 <div class="col-3">
                     <div class="card my-3 position-relative">
-                        <span class="position-absolute top-0 end-0 bg-danger rounded-5 p-2 z-1">-50%</span>
+                        <span class="position-absolute top-0 end-0 bg-danger discount-badge p-1 z-1 text-white">-50%</span>
                         <img src="<?= get_the_post_thumbnail_url() ?: wp_get_attachment_url(); ?>" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"><?php the_title(); ?></h5>
