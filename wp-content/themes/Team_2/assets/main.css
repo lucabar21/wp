@@ -309,6 +309,10 @@ h5 {
   font-weight: 700;
 }
 
+.discount-badge {
+  border-top-right-radius: 15px;
+}
+
 /* error 404 */
 
 .error {
