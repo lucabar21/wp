@@ -41,7 +41,7 @@
 </div>
 
 <!-- LATEST POST SECTION -->
-<div class="row justify-content-center my-4 mx-3 past">
+<div class="justify-content-center my-4 mx-3 past">
     <div class="hp-section-2">
         <h5>Dai un'occhiata alle destinazioni che abbiamo proposto le settimane precedenti.</h5>
         <div class="post-container">
@@ -85,6 +85,7 @@
             <label for="exampleFormControlTextarea1" class="form-label">Dacci un consiglio...</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
+        <div class="form-btn">Invia</div>
     </form>
 </div>
 <?php get_footer(); ?>

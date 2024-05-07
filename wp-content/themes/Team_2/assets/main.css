@@ -13,7 +13,7 @@ nav {
 }
 button {
   width: 150px;
-  height: 60px;
+  height: 50px;
   border: none;
   background-color: #99dfeb;
   color: #122b40;
@@ -155,7 +155,7 @@ button {
 
 .post-container {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   justify-content: center;
 }
 .hp-section-2 > h5 {
@@ -190,6 +190,8 @@ button {
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
   padding: 1rem;
   color: #122b40;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-label {
@@ -253,9 +255,18 @@ button {
 #promo-btn > h5 {
   text-align: center;
 }
-form {
-  width: 50%;
-  margin-inline: auto;
+.hp-top-section-3 > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hp-top-section-3 > form input {
+  width: 500px;
+}
+.hp-top-section-3 > form textarea {
+  width: 500px;
 }
 
 h5 {
@@ -368,8 +379,8 @@ h5 {
 }
 
 form {
-  width: 100% !important;
-  margin-inline: 0 !important;
+  width: 100%;
+  margin-inline: 0;
 }
 
 .card-dest {
@@ -421,4 +432,17 @@ footer {
   animation-name: btn-hover;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
+}
+
+.form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  border: 1px solid #122b40;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
