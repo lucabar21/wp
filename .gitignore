@@ -18,4 +18,4 @@ wp-config.php
 ...ma non ignora la directory 'themes'
 !/wp-content/themes/
 !/wp-content/themes/Team_2
-!/wp-content/themes/Team_2/index.php 
+!/wp-content/themes/Team_2/index.php
