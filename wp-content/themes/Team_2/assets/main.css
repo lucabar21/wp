@@ -227,6 +227,18 @@ button {
   justify-content: center;
   gap: 2rem;
 }
+
+#promo-btn a {
+  padding: 0.2em 2em;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #122b40;
+}
+
+#promo-btn a:hover {
+  color: #99dfeb;
+}
+
 #promo-btn > div {
   display: flex;
   justify-content: center;
