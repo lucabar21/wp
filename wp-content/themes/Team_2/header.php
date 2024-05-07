@@ -42,7 +42,7 @@
                             <a class="nav-link" href="<?= site_url("/contatti") ?>">Contatti</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= site_url("/destinations") ?>">Archivio</a>
+                            <a class="nav-link" href="<?= site_url("/destinations") ?>">Destinazioni</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?= site_url("/blog") ?>">Blog</a>
