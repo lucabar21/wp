@@ -5,8 +5,8 @@ the_post(); ?>
 
 
 <div class="my-4 mx-3">
-    <div class="row">
-        <div class="col-12 col-md-9">
+    <div class="row justify-content-center">
+        <div class="col-10">
             <div class="card-dest">
                 <img src="<?= get_the_post_thumbnail_url() ?: wp_get_attachment_url(); ?>" class="w-100"
                     alt="<?php the_title(); ?>">
@@ -20,7 +20,7 @@ the_post(); ?>
                         <div class="d-flex flex-column justify-content-evenly">
                             <div class="autore">
                                 <?php
-                            the_author(); ?>
+                                the_author(); ?>
                             </div>
                             <div class="d-flex flex-row">
                                 <p class="subdate me-2"><?php the_time('j F Y'); ?></p>
@@ -39,13 +39,9 @@ the_post(); ?>
                 <div class="card-text p-3"><?php the_content(); ?></div>
             </div>
         </div>
-        <div class="col-12 col-md-3">
-            <div class="sidebar"> <?php get_sidebar('primary', ['post_id' => get_the_ID()]); ?>
-            </div>
-        </div>
     </div>
-    <div class="row mt-3">
-        <div class="col-12 col-md-9">
+    <div class="row mt-3 justify-content-center">
+        <div class="col-10">
             <div class="card p-3">
                 <div class="form-width">
                     <?php comments_template(); ?>
