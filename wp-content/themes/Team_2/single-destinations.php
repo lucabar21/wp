@@ -3,10 +3,12 @@
 get_header();
 the_post(); ?>
 
-<div class="containe my-4 mx-3">
+<div class="my-4 mx-3">
     <div class="row">
         <div class="col-12 col-md-9">
-            <div class="card">
+            <div class="card-dest">
+                <img src="<?= get_the_post_thumbnail_url() ?: wp_get_attachment_url(); ?>" class="w-100"
+                                alt="<?php the_title(); ?>">
                 <h3 class="card-title p-3"><?php single_post_title(); ?></h3>
                 <div class="mx-3">
                     <hr>
