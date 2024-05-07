@@ -258,7 +258,7 @@ button {
 }
 
 #promo-btn a {
-  padding: 0.2em 2em;
+  /* padding: 0.2em 2em; */
   border-radius: 30px;
   text-decoration: none;
   color: #122b40;
