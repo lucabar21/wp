@@ -14,8 +14,8 @@
             $custom_query->the_post(); ?>
             <img class="hero-img" src="<?= get_the_post_thumbnail_url() ?: 'http://placedog.net/455'; ?>" alt="hero">
             <div class="hero-text">
-                <h2><?php the_title(); ?></h2>
-                <?php
+                <h2 class="text-shadow"><?php the_title(); ?></h2>
+                <p class="p-didascalia"><?php
                 $excerpt = get_the_excerpt();
                 $max_lines = 3;
                 $excerpt_lines = substr_count($excerpt, "\n") + 1;
@@ -23,7 +23,7 @@
                     $lines = explode("\n", wordwrap($excerpt, 1000));
                     $excerpt = implode("\n", array_slice($lines, 0, $max_lines)) . '...';
                 }
-                ?>
+                ?></p>
                 <p><?php echo $excerpt; ?></p>
                 <a href="<?php the_permalink(); ?>"><button>Scopri di più</button></a>
             </div>
@@ -56,10 +56,10 @@
                 while ($custom_query->have_posts()):
                     $custom_query->the_post(); ?>
                     <div class="col-auto hp-card">
-                        <img src="<?= get_the_post_thumbnail_url() ?: wp_get_attachment_url(); ?>" alt="card">
+                        <img class="home-card-shadow" src="<?= get_the_post_thumbnail_url() ?: wp_get_attachment_url(); ?>" alt="card">
                         <div class="hero-text-mini">
-                            <h2><?php the_title(); ?></h2>
-                            <a href="<?php the_permalink(); ?>"><button>Scopri di più</button></a>
+                            <h4 class="text-shadow"><?php the_title(); ?></h4>
+                            <a href="<?php the_permalink(); ?>"><button class="">Scopri di più</button></a>
                         </div>
                     </div>
                 <?php endwhile;

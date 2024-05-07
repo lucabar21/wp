@@ -65,6 +65,7 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: brightness(60%);
 }
 
 .hero-text {
@@ -138,6 +139,18 @@ button {
   height: 50px;
 }
 
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.674);
+}
+
+.p-didascalia {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.674);
+}
+
+.home-card-shadow {
+  filter: brightness(80%);
+}
+
 /* Latest post section settings */
 
 .hp-section-2 {
@@ -166,6 +179,12 @@ button {
 .hp-card {
   position: relative;
   width: 24%;
+  transition: transform 0.3s ease;
+}
+
+.hp-card:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
 }
 
 .hp-card > img {
