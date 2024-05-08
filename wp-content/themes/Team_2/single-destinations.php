@@ -12,7 +12,7 @@ the_post(); ?>
                 <h3 class="card-title p-3"><?php single_post_title(); ?></h3>
                 <div class="mx-3">
                     <hr>
-                    <div class="card-subtitle d-flex flex-row">
+                    <div class="card-subtitle d-flex flex-row justify-content-center">
                         <div class="rounded-circle overflow-hidden me-2">
                             <?php echo get_avatar(get_the_author_meta('ID'), 50); ?>
                         </div>
