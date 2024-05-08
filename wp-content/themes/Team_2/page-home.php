@@ -90,7 +90,8 @@
             <label for="exampleFormControlTextarea1" class="form-label">Dacci un consiglio...</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-        <div class="form-btn">Invia</div>
+        <button type="submit" class="form-btn">Invia
+        </button>
     </form>
 </div>
 <?php get_footer(); ?>
