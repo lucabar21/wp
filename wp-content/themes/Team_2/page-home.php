@@ -77,7 +77,10 @@
 <!-- CALL TO ACTION FORM -->
 <div class="hp-top-section-3 my-4 mx-3">
     <h5 class="my-3">Consigliaci nuove destinazioni che vorresti presentassimo nelle prossime settimane!</h5>
-    <form>
+    <div id="alertBox" class="alert alert-success" role="alert" style="display: none;">
+        Messaggio inviato con successo, grazie per il tuo contributo!
+    </div>
+    <form id="myForm">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Inserisci il tuo nome</label>
             <input type="text" class="form-control" id="exampleFormControlInput1">
@@ -90,8 +93,7 @@
             <label for="exampleFormControlTextarea1" class="form-label">Dacci un consiglio...</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-        <button type="submit" class="form-btn">Invia
-        </button>
+        <button type="submit" class="form-btn">Invia</button>
     </form>
 </div>
 <?php get_footer(); ?>

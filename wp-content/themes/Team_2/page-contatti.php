@@ -13,18 +13,22 @@
         </div>
     </div>
     <div class="col-6 cont">
-        <form>
+        <div id="alertBox" class="alert alert-success" role="alert" style="display: none;">
+            Messaggio inviato con successo, ti risponderemo il prima possibile!
+        </div>
+        <form id="myForm" action="process_form.php" method="post">
             <div class="d-flex flex-column justify-content-center align-items-center">
                 <h2>...oppure compila il form</h2>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Nome">
-                    <input type="text" class="form-control" placeholder="Cognome">
+                    <input type="text" class="form-control" name="nome" placeholder="Nome">
+                    <input type="text" class="form-control" name="cognome" placeholder="Cognome">
                 </div>
                 <div class="input-group mb-3">
-                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="email" class="form-control" name="email" placeholder="Email">
                 </div>
                 <div class="form-floating w-100">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <textarea class="form-control" name="messaggio" placeholder="Leave a comment here"
+                        id="floatingTextarea"></textarea>
                     <label style="color:#797D7E" for="floatingTextarea">Messaggio</label>
                 </div>
                 <button type="submit" class="form-btn my-2">Invia</button>

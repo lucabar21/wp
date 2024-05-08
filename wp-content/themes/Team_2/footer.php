@@ -58,6 +58,16 @@ shuffle($bw_authors);
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+<script>
+    document.getElementById("myForm").addEventListener("submit", function (event) {
+        document.getElementById("alertBox").style.display = "block";
+        event.preventDefault();
+        this.reset();
+        setTimeout(function () {
+            document.getElementById("alertBox").style.display = "none";
+        }, 2000);
+    });
+</script>
 <?php wp_footer(); ?>
 </body>
 
