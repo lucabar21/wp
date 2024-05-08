@@ -13,7 +13,7 @@
         </div>
     </div>
     <div class="col-6 cont">
-        <div>
+        <div class="d-flex flex-column justify-content-center align-items-center">
             <h2>...oppure compila il form</h2>
             <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="Nome">
@@ -22,9 +22,9 @@
             <div class="input-group mb-3">
                 <input type="email" class="form-control" placeholder="Email">
             </div>
-            <div class="form-floating">
+            <div class="form-floating w-100">
                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                <label for="floatingTextarea">Messaggio</label>
+                <label style="color:#797D7E" for="floatingTextarea">Messaggio</label>
             </div>
             <button class="form-btn my-2">Invia</button>
         </div>

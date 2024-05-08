@@ -5,7 +5,7 @@ the_post(); ?>
 
 <div class="my-4 mx-3">
     <div class="row">
-        <div class="col-12 col-md-9">
+        <div class="col-12 col-md-9 mb-3">
             <div class="card-dest">
                 <img src="<?= get_the_post_thumbnail_url() ?: wp_get_attachment_url(); ?>" class="w-100"
                     alt="<?php the_title(); ?>">
@@ -43,7 +43,7 @@ the_post(); ?>
             </div>
         </div>
     </div>
-    <div class="row mt-3">
+    <div class="row">
         <div class="col-12 col-md-9">
             <div class="card p-3">
                 <div class="form-width">

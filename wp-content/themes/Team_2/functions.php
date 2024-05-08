@@ -8,14 +8,18 @@ function theme_files()
 add_action('wp_enqueue_scripts', 'theme_files');
 
 
+/* Gutenberg CPT Start*/
+/* Register WordPress Gutenberg CPT*/
 function custom_posts()
 {
     register_post_type('destinations', [
+        /* WordPress CPT Options Start */
         'supports' => ['title', 'editor', 'author', 'comments', 'thumbnail'],
         'delete with_user' => false,
         'has_archive' => true,
         'public' => true,
         'menu icon' => 'dashicons-tickets-alt',
+        'show_in_rest' => true,
         'labels' => [
             'name' => 'Destinations',
             'edit_new_item' => 'Add New Destination',
@@ -28,7 +32,7 @@ function custom_posts()
     ]);
 }
 add_action('init', 'custom_posts');
-
+/* Gutenberg CPT End*/
 function custom_promo()
 {
     register_post_type('promotions', [
@@ -37,6 +41,7 @@ function custom_promo()
         'has_archive' => true,
         'public' => true,
         'menu icon' => 'dashicons-tickets-alt',
+        'show_in_rest' => true,
         'labels' => [
             'name' => 'Promotions',
             'edit_new_item' => 'Add New Promotion',

@@ -36,10 +36,11 @@
     <div id="promo-img"><img src="<?= site_url("/wp-content/uploads/2024/05/promo.png") ?>" alt="promo"></div>
     <div id="promo-btn">
         <h5>APPROFITTA DEI NOSTRI IMPERDIBILI SCONTI VIAGGIO!</h5>
-        <div class="arc-btn">
-            
-            <a href="<?= site_url("/coupon")?>">COUPON 50%</a>
-        </div>
+
+        <a id="btn-a" href="<?= site_url("/coupon") ?>">
+            <div>COUPON 50%</div>
+        </a>
+
     </div>
 </div>
 
@@ -47,7 +48,7 @@
 <div class="justify-content-center my-4 mx-3 past">
     <div class="hp-section-2">
         <h5>Dai un'occhiata alle destinazioni che abbiamo proposto le settimane precedenti.</h5>
-        <div class="post-container">
+        <div class="row post-container">
             <?php
             $args = array(
                 'post_type' => 'destinations',
@@ -58,8 +59,9 @@
             if ($custom_query->have_posts()):
                 while ($custom_query->have_posts()):
                     $custom_query->the_post(); ?>
-                    <div class="col-auto hp-card">
-                        <img class="home-card-shadow" src="<?= get_the_post_thumbnail_url() ?: wp_get_attachment_url(); ?>" alt="card">
+                    <div class="col-xs-12 col-md-6 col-lg-4 col-xl-3 hp-card">
+                        <img class="home-card-shadow" src="<?= get_the_post_thumbnail_url() ?: wp_get_attachment_url(); ?>"
+                            alt="card">
                         <div class="hero-text-mini">
                             <h4 class="text-shadow"><?php the_title(); ?></h4>
                             <a href="<?php the_permalink(); ?>"><button class="">Scopri di più</button></a>

@@ -172,7 +172,7 @@ button {
 
 .post-container {
   display: flex;
-  gap: 1rem;
+  row-gap: 0.8rem;
   justify-content: center;
 }
 .hp-section-2 > h5 {
@@ -186,7 +186,7 @@ button {
 }
 .hp-card {
   position: relative;
-  width: 24%;
+  /* width: 24%; */
   transition: transform 0.3s ease;
 }
 
@@ -255,20 +255,16 @@ button {
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  color: #122b40;
 }
 
-#promo-btn a {
-  /* padding: 0.2em 2em; */
+#btn-a {
   border-radius: 30px;
   text-decoration: none;
   color: #122b40;
 }
 
-#promo-btn a:hover {
-  color: #99dfeb;
-}
-
-#promo-btn > div {
+#promo-btn > a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -281,7 +277,7 @@ button {
   cursor: pointer;
 }
 
-#promo-btn > div:hover {
+#promo-btn > a:hover {
   animation-name: btn-hover;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
@@ -356,6 +352,7 @@ h5 {
   animation-name: btn-hover;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
+  color: #99dfeb;
 }
 
 .arc-read {
@@ -542,4 +539,33 @@ footer {
 .sb-text-mini > a {
   text-decoration: none;
   color: #122b40;
+}
+
+@media screen and (max-width: 725px) {
+  .hero-text > h2 {
+    font-size: 2rem;
+  }
+
+  .hero-text > p {
+    font-size: 1rem;
+  }
+
+  #promo-btn > div {
+    width: 125px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .hp-bot-section-3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hp-top-section-3 > form input {
+    width: 270px;
+  }
+  .hp-top-section-3 > form textarea {
+    width: 270px;
+  }
 }
