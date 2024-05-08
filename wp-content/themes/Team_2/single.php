@@ -7,13 +7,13 @@ the_post(); ?>
 <div class="my-4 mx-3">
     <div class="row justify-content-center">
         <div class="col-10">
-            <div class="card-dest">
+            <div class="card-dest text-center">
                 <img src="<?= get_the_post_thumbnail_url() ?: wp_get_attachment_url(); ?>" class="w-100"
                     alt="<?php the_title(); ?>">
                 <h3 class="card-title p-3"><?php single_post_title(); ?></h3>
                 <div class="mx-3">
                     <hr>
-                    <div class="card-subtitle d-flex flex-row">
+                    <div class="card-subtitle d-flex flex-row justify-content-center">
                         <div class="rounded-circle overflow-hidden me-2">
                             <?php echo get_avatar(get_the_author_meta('ID'), 50); ?>
                         </div>
