@@ -371,7 +371,7 @@ h5 {
 .card {
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.211);
   border-radius: 15px;
-  height: 400px;
+  /* height: 400px; */
   overflow: hidden;
 }
 
@@ -568,4 +568,24 @@ footer {
   .hp-top-section-3 > form textarea {
     width: 270px;
   }
+}
+
+/* SEZIONE COMMENTI */
+
+.submit {
+  border: none;
+  background-color: #99dfeb;
+  color: #122b40;
+  border-radius: 15px;
+}
+
+.submit:hover {
+  animation-name: btn-hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  color: #99dfeb;
+}
+
+.form-label {
+  margin-bottom: 0;
 }
