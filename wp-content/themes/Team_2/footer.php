@@ -65,7 +65,7 @@ shuffle($bw_authors);
         this.reset();
         setTimeout(function () {
             document.getElementById("alertBox").style.display = "none";
-        }, 2000);
+        }, 3000);
     });
 </script>
 <?php wp_footer(); ?>
